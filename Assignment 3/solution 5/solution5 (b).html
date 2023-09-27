@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+</head>
+<style>
+    legend{
+        font-weight: bolder;
+        font-size:27px;
+        }
+    input{
+        border:2px solid black;
+    }
+    label{
+        font-weight: bolder;
+        font-size:20px; 
+    }
+    fieldset{
+        border:2px solid black;
+        width:50%;
+        margin-left:25%;
+    }
+    #submit{
+        color:black;
+        padding:7px;
+    }
+    h1{
+        text-shadow: 2px 2px grey;
+    }
+
+</style>
+<body>
+    
+    <center><h1>Sign In Here</h1></center> <hr>
+    <form action="" method="post">
+     <fieldset>
+<legend>Information</legend><br>
+<center>
+
+<label for="email">E-mail :</label>
+<input type="email" placeholder="abc@gmail.com" name="email" id="email" required /><br><br>
+
+<label for="password">Password :</label>
+<input type="password"  placeholder="********" name="password" id="password" required min="8" max="12" /><br><br>
+
+<button type="submit" id="submit">Sign In</button><br><br>
+Create an account? <a href="/Assignment 3/solution 5/solution5 (a).html">Sign Up</a>
+   </center>
+         </fieldset>
+     </form>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<style>
+    legend{
+        font-weight: bolder;
+        font-size:27px;
+        }
+    input,select{
+        border:2px solid black;
+    }
+    label{
+        font-weight: bolder;
+        font-size:20px; 
+    }
+    fieldset{
+        border:2px solid black;
+        width:50%;
+        margin-left:25%;
+    }
+    #submit{
+        color:black;
+        padding:7px;
+    }
+    h1{
+        text-shadow: 2px 2px grey;
+    }
+
+</style>
+<body>
+    
+    <center><h1>Sign Up Here</h1></center> <hr>
+    <form action="" method="post">
+     <fieldset>
+<legend>Information</legend><br>
+<center>
+<label for="firstname" > First Name :
+<input type="text" placeholder="Arpita" name="first name" id="firstname" required min="3" max="30" /></label><br><br>
+
+<label for="lastname" > Last Name :
+<input type="text" placeholder="Kumari" name="last name" id="lastname" required min="3" max="30" /></label><br><br>
+
+<label for="gender">Gender :</label>
+<input type="radio" name="gnd" id="gender" value="Male"> Male
+<input type="radio" name="gnd" id="gender" value="Female"> Female  
+<input type="radio" name="gnd" id="gender" value="Other"> Others <br><br>
+
+<label for="email">E-mail :</label>
+<input type="email" placeholder="abc@gmail.com" name="email" id="email" required /><br><br>
+
+<label for="age">Age: </label>
+<input type="number" placeholder="42" name="age" id="age" required min="0" max="150" />
+
+<label for="contactnumber">Contact No. :</label>
+<select>
+    <option value="+91">+91</option>
+    <option value="+678">+678</option>
+    <option value="+87">+87</option>
+    <option value="+332">+332</option>
+    <option value="+446">+446</option>
+</select>
+<input type="number" placeholder="945*******" name="c_no" id="contactnumber" required maxlength="10" /><br><br>
+
+<label for="password">Password :</label>
+<input type="password"  placeholder="********" name="password" id="password" required min="8" max="12" /><br><br>
+
+<label for="confirmpassword">Confirm Password :</label>
+<input type="password"  placeholder="********" name="confirmpassword" id="confirmpassword" required /><br><br>
+
+<label for="terms">
+<input type="checkbox" name="terms" id="terms" required /> I agree to terms and conditions</label><br><br>
+
+<button type="submit" id="submit">REGISTER NOW</button><br><br>
+Already have an account? <a href="/Assignment 3/solution 5/solution5 (b).html">Sign In</a>
+   </center>
+         </fieldset>
+     </form>
+
+</body>
+</html>
